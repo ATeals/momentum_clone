@@ -13,16 +13,27 @@
     input.forEach((item, index) => {
         item.addEventListener("change", () => {
             times[index] = Number(item.value);
-            console.log(times);
         });
     });
 
     Notification.requestPermission().then(function (result) {
-        console.log(result);
+        result === "granted" ? console.log("알림 허용!") : console.log("알림 허용 안함!");
     });
 
     function alertEndTime() {
-        new Notification("할 일 목록", { body: "안녕! 알람!" });
+        if (Notification.permission !== "granted") {
+            alert("notification is disabled");
+            console.log(Notification.permission);
+        } else {
+            var notification = new Notification("노마드 코더 모맨텀!", {
+                icon: `https://www.google.com/s2/favicons?domain=${nomadcoders.co}&sz=32`,
+                body: "타이머가 종료 되었습니다!",
+            });
+
+            // notification.onclick = function () {
+            //     window.open("http://google.com");
+            // };
+        }
     }
 
     function timeChack() {
@@ -59,7 +70,6 @@
         timer = setInterval(() => {
             timeChack();
             printTime();
-            console.log(times);
         }, 1000);
     }
 
