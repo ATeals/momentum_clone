@@ -10,12 +10,12 @@ header > section {
     width: 25%;
     height: 100%;
     margin: 10px;
-}
-
-.user_info {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.user_info {
     flex-direction: column;
     padding: 10px;
     box-sizing: border-box;

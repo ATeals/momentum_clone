@@ -1,0 +1,31 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    flex-direction: column;
+    position: relative;
+}
+
+.timer__input {
+    font-size: 2em;
+    display: flex;
+    margin: 10px;
+}
+
+.timer__input input {
+    margin-left: 10px;
+    width: 10em;
+    height: 1em;
+    text-align: center;
+}
+
+.timer__btnBox {
+    position: absolute;
+    bottom: 2em;
+}
+
+.timer__text {
+    font-size: 4em;
+    font-weight: 600;
+}

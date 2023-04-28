@@ -1,0 +1,16 @@
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.weather__img {
+    width: 8em;
+    height: 8em;
+}
+
+.weather__text {
+    font-size: 1.5em;
+}
