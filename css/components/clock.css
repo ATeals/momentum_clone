@@ -1,0 +1,43 @@
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock__box {
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    font-size: 10px;
+}
+
+.hour {
+    width: 0.5em;
+    height: 2em;
+    background: black;
+    position: absolute;
+    top: calc(50% - 2em);
+    left: calc(50% - 0.5em);
+    transform-origin: bottom;
+}
+
+.min {
+    width: 0.5em;
+    height: 4em;
+    background: black;
+    position: absolute;
+    top: calc(50% - 4em);
+    left: calc(50% - 0.5em);
+    transform-origin: bottom;
+}
+
+.sec {
+    width: 0.2em;
+    height: 5em;
+    background: red;
+    position: absolute;
+    top: calc(50% - 5em);
+    left: calc(50% - 0.2em);
+    transform-origin: bottom;
+}

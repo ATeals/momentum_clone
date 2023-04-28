@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="css/reset.css"
+        />
+        <link
+            rel="stylesheet"
+            href="css/style.css"
+        />
+        <title>Momentum</title>
+    </head>
+    <body>
+        <header>
+            <section class="user_info neumorphism">
+                <div class="profile__img">
+                    <div class="profile__img-icon">🤣</div>
+                </div>
+                <span class="profile__name">ateals</span>
+            </section>
+            <section class="clock neumorphism">
+                <div class="clock__box">
+                    <div class="hour"></div>
+                    <div class="min"></div>
+                    <div class="sec"></div>
+                </div>
+            </section>
+            <section class="weather_info neumorphism">weather_info</section>
+            <section class="weather_info neumorphism">weather_info</section>
+        </header>
+
+        <ul class="contentBox hidden">
+            <!-- <li class="todo contentBox__column neumorphism">
+                <form class="todo__form">
+                    <input
+                        type="text"
+                        placeholder="write a To Do and Press Enter "
+                        required
+                    />
+                </form>
+                <ul id="todo-list"></ul>
+            </li>
+
+            <li class="shortcut contentBox__column neumorphism">
+                <div class="shortcut__btnBox">
+                    <div class="addshortcutBtn">
+                        <i class="fas fa-plus fa-lg"></i>
+                    </div>
+                    <div class="deleteshortcutBtn">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+
+                <ul class="shortcut__list"></ul>
+                <div class="addShortcut hidden">
+                    <form class="addshortcut__form">
+                        <input
+                            type="text"
+                            placeholder="url"
+                            class="addShortcut__url"
+                            required
+                        />
+                        <input
+                            type="text"
+                            placeholder="name"
+                            class="addShortcut__name"
+                            required
+                        />
+                        <input
+                            type="submit"
+                            ,
+                            value="Create"
+                        />
+                        <input
+                            type="button"
+                            value="Cancel"
+                            class="Cancel"
+                        />
+                    </form>
+                </div>
+            </li>
+
+            <li class="randoming contentBox__column neumorphism">
+                <h2 class="randoming__text">글귀</h2>
+                <h4 class="randoming__author">작가</h4>
+            </li>
+
+            <li class="rockPaperScissors contentBox__column neumorphism">
+                <article class="rockPaperScissors__start">
+                    <div class="rockPaperScissors__robot">🤖</div>
+                    <div class="rockPaperScissors__robot-item"></div>
+                    <div>vs</div>
+                    <div class="rockPaperScissors__container">
+                        <div class="rockPaperScissors__item">✊</div>
+                        <div class="rockPaperScissors__item">✌️</div>
+                        <div class="rockPaperScissors__item">✋</div>
+                    </div>
+                </article>
+                <article class="rockPaperScissors__result hidden">
+                    <div class="rockPaperScissors__result-items"></div>
+                    <div class="rockPaperScissors__result-text"></div>
+                    <button>Re Play?</button>
+                </article>
+            </li> -->
+
+            <li class="timer contentBox__column neumorphism">
+                <div class="timer__form">
+                    <div class="timer__input">
+                        <div>시</div>
+                        <input
+                            type="number"
+                            required
+                            value="0"
+                            min="0"
+                            max="24"
+                        />
+                    </div>
+                    <div class="timer__input">
+                        <div>분</div>
+                        <input
+                            type="number"
+                            required
+                            value="0"
+                            min="0"
+                            max="60"
+                        />
+                    </div>
+                    <div class="timer__input">
+                        <div>초</div>
+                        <input
+                            type="number"
+                            required
+                            value="0"
+                            min="0"
+                            max="60"
+                        />
+                    </div>
+                </div>
+                <div class="timer__text hidden">00:00:00</div>
+
+                <div class="timer__btnBox">
+                    <button class="timer__play">play</button>
+                    <button class="timer__pause hidden">pause</button>
+                    <button class="timer__reset">reset</button>
+                </div>
+            </li>
+        </ul>
+
+        <form class="login neumorphism hidden">
+            <input
+                type="text"
+                placeholder="name!"
+            />
+            <select class="login__select">
+                <option value="🐶">🐶</option>
+                <option value="🐹">🐹</option>
+                <option value="🐷">🐷</option>
+            </select>
+            <input
+                type="submit"
+                value="LogIn"
+                required
+            />
+        </form>
+        <nav>
+            <ul class="nav__list">
+                <li class="nav__content todoBtn neumorphism">nav</li>
+                <li class="nav__content shortcutBtn neumorphism">nav</li>
+                <li class="nav__content randomingBtn neumorphism">nav</li>
+                <li class="nav__content rockPaperScissorsBtn neumorphism">nav</li>
+            </ul>
+        </nav>
+
+        <script src="js/login.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/shortcut.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/randoming.js"></script>
+        <script src="js/rockPaperScissors.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/timer.js"></script>
+        <script
+            src="https://kit.fontawesome.com/3690d2b434.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav__content {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    border-radius: 2em;
+}

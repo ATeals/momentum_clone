@@ -1,0 +1,11 @@
+.neumorphism {
+    border-radius: 21px;
+    background: #ffffff;
+    box-shadow: 8px 8px 0px #393939;
+}
+
+.neumorphism-push {
+    border-radius: 21px;
+    background: #ffffff;
+    box-shadow: inset 8px 8px 0px #393939, inset -20px -20px 0px #ffffff;
+}
