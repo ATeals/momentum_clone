@@ -26,7 +26,7 @@
             console.log(Notification.permission);
         } else {
             var notification = new Notification("노마드 코더 모맨텀!", {
-                icon: `https://www.google.com/s2/favicons?domain=${nomadcoders.co}&sz=32`,
+                icon: `https://www.google.com/s2/favicons?domain=nomadcoders.co&sz=64`,
                 body: "타이머가 종료 되었습니다!",
             });
 
