@@ -55,6 +55,7 @@
             clearInterval(timer);
             onForm();
             alert("end!");
+            alertEndTime();
         }
     }
 
