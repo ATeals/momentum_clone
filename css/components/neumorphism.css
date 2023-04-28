@@ -1,11 +1,23 @@
-.neumorphism {
+/* .neumorphism {
     border-radius: 21px;
-    background: #ffffff;
+    background: var(--NeumorphismBackgroundColor);
     box-shadow: 8px 8px 0px #393939;
 }
 
 .neumorphism-push {
     border-radius: 21px;
-    background: #ffffff;
+    background: var(--NeumorphismBackgroundColor);
     box-shadow: inset 8px 8px 0px #393939, inset -20px -20px 0px #ffffff;
+} */
+
+.neumorphism {
+    border-radius: 21px;
+    background: var(--NeumorphismBackgroundColor);
+    box-shadow: 8px 8px 0px var(--NeumorphismTopShadowColor);
+}
+
+.neumorphism-push {
+    border-radius: 21px;
+    background: var(--NeumorphismBackgroundColor);
+    box-shadow: inset 8px 8px 0px var(--NeumorphismTopShadowColor), inset -20px -20px 0px var(--BackgroundColor);
 }

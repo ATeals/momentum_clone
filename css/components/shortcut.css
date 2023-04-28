@@ -17,7 +17,7 @@
 }
 
 .shortcut__btnBox > div {
-    font-size: 2em;
+    font-size: 3em;
     margin: 20px;
 }
 
@@ -53,4 +53,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.addshortcut__form input {
+    border-radius: 15px;
+    width: 14em;
+    height: 2em;
 }

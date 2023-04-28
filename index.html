@@ -24,9 +24,9 @@
         <header>
             <section class="user_info neumorphism">
                 <div class="profile__img">
-                    <div class="profile__img-icon">🤣</div>
+                    <div class="profile__img-icon">👻</div>
                 </div>
-                <span class="profile__name">ateals</span>
+                <span class="profile__name">who are you?</span>
             </section>
             <section class="clock neumorphism">
                 <div class="clock__box">
@@ -36,7 +36,7 @@
                 </div>
             </section>
             <section class="weather neumorphism">
-                <img class="weather__img"></img>
+                <div class="weather__img-container"><img class="weather__img"></img></div>
                 <div class="weather__text"></div>
             </section>
         </header>
@@ -111,7 +111,7 @@
                 <article class="rockPaperScissors__result hidden">
                     <div class="rockPaperScissors__result-items"></div>
                     <div class="rockPaperScissors__result-text"></div>
-                    <button>Re Play?</button>
+                    <button><i class="fa-solid fa-reply"></i></button>
                 </article>
             </li>
 
@@ -151,9 +151,9 @@
                 <div class="timer__text hidden">00:00:00</div>
 
                 <div class="timer__btnBox">
-                    <button class="timer__play">play</button>
-                    <button class="timer__pause hidden">pause</button>
-                    <button class="timer__reset">reset</button>
+                    <button class="timer__play"><i class="fa-solid fa-play"></i></button>
+                    <button class="timer__pause hidden"><i class="fa-solid fa-pause"></i></button>
+                    <button class="timer__reset"><i class="fa-solid fa-xmark fa-lg"></i></button>
                 </div>
             </li>
         </ul>
@@ -166,7 +166,12 @@
             <select class="login__select">
                 <option value="🐶">🐶</option>
                 <option value="🐹">🐹</option>
-                <option value="🐷">🐷</option>
+                <option value="🐨">🐨</option>
+                <option value="🐸">🐸</option>
+                <option value="🦋">🦋</option>
+                <option value="🦁">🦁</option>
+                <option value="🦊">🦊</option>
+                <option value="🐼">🐼</option>
             </select>
             <input
                 type="submit"
@@ -181,6 +186,8 @@
                 <li class="nav__content randomingBtn neumorphism"><i class="fa-solid fa-file-image"></i></li>
                 <li class="nav__content rockPaperScissorsBtn neumorphism"><i class="fa-solid fa-hand-back-fist"></i></li>
                 <li class="nav__content timerBtn neumorphism"><i class="fa-solid fa-stopwatch-20"></i></li>
+                <li class="nav__content darkModeBtn neumorphism"><i class="fa-solid fa-moon"></i></li>
+                <li class="nav__content lightModeBtn neumorphism-push hidden"><i class="fa-solid fa-sun"></i></li>
             </ul>
         </nav>
 
@@ -193,6 +200,7 @@
         <script src="js/rockPaperScissors.js"></script>
         <script src="js/nav.js"></script>
         <script src="js/timer.js"></script>
+        <script src="js/darkMode.js"></script>
         <script
             src="https://kit.fontawesome.com/3690d2b434.js"
             crossorigin="anonymous"

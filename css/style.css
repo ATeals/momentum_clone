@@ -33,9 +33,21 @@ body {
     height: 100%;
     box-sizing: border-box;
     position: relative;
+    color: var(--FontColor);
 }
 ::-webkit-scrollbar {
     display: none;
+}
+
+button {
+    border: none;
+    background-color: var(--BtnBackgroundColor);
+}
+
+input {
+    margin: 2rem;
+    background-color: var(--BackgroundColor);
+    color: var(--FontColor);
 }
 
 /* global */

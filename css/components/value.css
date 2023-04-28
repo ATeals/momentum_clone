@@ -1,3 +1,15 @@
 :root {
+    /* --BackgroundColor: #292929;
+    --NeumorphismBackgroundColor: #545454;
+    --NeumorphismTopShadowColor: #323232;
+    --NeumorphismbottomShadowColor: #585858;
+    --FontColor: #ffffff;
+    --BtnBackgroundColor: #545454; */
+
     --BackgroundColor: #e3e7e9;
+    --NeumorphismBackgroundColor: #ffffff;
+    --NeumorphismTopShadowColor: #393939;
+    --NeumorphismbottomShadowColor: #585858;
+    --FontColor: #000000;
+    --BtnBackgroundColor: #ffffff;
 }

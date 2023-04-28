@@ -16,13 +16,19 @@
 .timer__input input {
     margin-left: 10px;
     width: 10em;
-    height: 1em;
+    height: 2em;
     text-align: center;
+    border-radius: 20px;
 }
 
 .timer__btnBox {
     position: absolute;
     bottom: 2em;
+}
+
+.timer__btnBox button {
+    font-size: 2em;
+    margin-right: 0.5em;
 }
 
 .timer__text {

@@ -30,3 +30,8 @@
 .rockPaperScissors__item:hover {
     cursor: help;
 }
+
+.rockPaperScissors__result button {
+    font-size: 2em;
+    color: var(--FontColor);
+}
