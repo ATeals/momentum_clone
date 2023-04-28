@@ -3,6 +3,7 @@
     const shortcutBtn = document.querySelector(".shortcutBtn");
     const randomingBtn = document.querySelector(".randomingBtn");
     const rockPaperScissorsBtn = document.querySelector(".rockPaperScissorsBtn");
+    const timerBtn = document.querySelector(".timerBtn");
 
     const PUSH_CLASSNAME = "neumorphism-push";
 
@@ -27,7 +28,13 @@
         rockPaperScissors.classList.toggle(HIDDEN_CLASSNAME);
         rockPaperScissorsBtn.classList.toggle(PUSH_CLASSNAME);
     }
+    function toggleTimer() {
+        const timer = document.querySelector(".timer");
+        timer.classList.toggle(HIDDEN_CLASSNAME);
+        timerBtn.classList.toggle(PUSH_CLASSNAME);
+    }
 
+    timerBtn.addEventListener("click", toggleTimer);
     todoBtn.addEventListener("click", toggleTodo);
     shortcutBtn.addEventListener("click", toggleShortcut);
     randomingBtn.addEventListener("click", toggleRandoming);

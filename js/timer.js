@@ -22,8 +22,7 @@
 
     function alertEndTime() {
         if (Notification.permission !== "granted") {
-            alert("notification is disabled");
-            console.log(Notification.permission);
+            console.log("허용 안함!", Notification.permission);
         } else {
             var notification = new Notification("노마드 코더 모맨텀!", {
                 icon: `https://www.google.com/s2/favicons?domain=nomadcoders.co&sz=64`,
