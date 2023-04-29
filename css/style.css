@@ -57,3 +57,28 @@ input {
 .opacity {
     opacity: 0;
 }
+
+@media screen and (min-width: 1200px) {
+    html {
+        width: 100vw;
+        height: 100vh;
+        font-size: 0.3vw;
+    }
+    header > section {
+        width: 15%;
+        height: 100%;
+    }
+    .contentBox__column {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header > section {
+        width: 33%;
+        height: 100%;
+    }
+    .contentBox__column {
+        width: 70%;
+    }
+}
