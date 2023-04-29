@@ -53,8 +53,8 @@
         if (times[2] === 0 && times[1] === 0 && times[0] === 0) {
             clearInterval(timer);
             onForm();
-            alert("end!");
             alertEndTime();
+            console.log("Time out!");
         }
     }
 
