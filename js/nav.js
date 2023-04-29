@@ -1,12 +1,12 @@
+const PUSH_CLASSNAME = "neumorphism-push";
+const NAV_KEY = "pushedNav";
+
 (() => {
     const todoBtn = document.querySelector(".todoBtn");
     const shortcutBtn = document.querySelector(".shortcutBtn");
     const randomingBtn = document.querySelector(".randomingBtn");
     const rockPaperScissorsBtn = document.querySelector(".rockPaperScissorsBtn");
     const timerBtn = document.querySelector(".timerBtn");
-
-    const PUSH_CLASSNAME = "neumorphism-push";
-    const NAV_KEY = "pushedNav";
 
     let pushedNavs = [];
 

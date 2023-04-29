@@ -4,6 +4,12 @@
     const darkModeBtn = document.querySelector(".darkModeBtn");
     const lightModeBtn = document.querySelector(".lightModeBtn");
 
+    const isDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (isDarkMode) {
+        toggleBtn();
+        darkMode();
+    }
+
     function toggleBtn() {
         darkModeBtn.classList.toggle(HIDDEN_CLASSNAME);
         lightModeBtn.classList.toggle(HIDDEN_CLASSNAME);
