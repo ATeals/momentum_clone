@@ -6,6 +6,45 @@
     const timerBtn = document.querySelector(".timerBtn");
 
     const PUSH_CLASSNAME = "neumorphism-push";
+    const NAV_KEY = "pushedNav";
+
+    let pushedNavs = [];
+
+    const savedNav = localStorage.getItem(NAV_KEY);
+    if (savedNav) {
+        pushedNavs = [...savedNav.split(",")];
+    }
+
+    const navFuncObject = {
+        todo: () => {
+            toggleTodo();
+        },
+        timer: () => {
+            toggleTimer();
+        },
+        shortcut: () => {
+            toggleShortcut();
+        },
+        randoming: () => {
+            toggleRandoming();
+        },
+        rockPaperScissors: () => {
+            togglerockPaperScissors();
+        },
+    };
+
+    function showNav() {
+        pushedNavs.map((item) => {
+            navFuncObject[item]();
+            console.log(pushedNavs, item);
+        });
+    }
+
+    function toggleNav(name) {
+        if (!pushedNavs.includes(name)) pushedNavs.push(name);
+        else pushedNavs = pushedNavs.filter((item) => item != name);
+        localStorage.setItem(NAV_KEY, pushedNavs);
+    }
 
     function toggleTodo() {
         const todo = document.querySelector(".todo");
@@ -34,9 +73,27 @@
         timerBtn.classList.toggle(PUSH_CLASSNAME);
     }
 
-    timerBtn.addEventListener("click", toggleTimer);
-    todoBtn.addEventListener("click", toggleTodo);
-    shortcutBtn.addEventListener("click", toggleShortcut);
-    randomingBtn.addEventListener("click", toggleRandoming);
-    rockPaperScissorsBtn.addEventListener("click", togglerockPaperScissors);
+    timerBtn.addEventListener("click", () => {
+        toggleTimer();
+        toggleNav("timer");
+    });
+    todoBtn.addEventListener("click", () => {
+        toggleTodo();
+        toggleNav("todo");
+    });
+    shortcutBtn.addEventListener("click", () => {
+        toggleShortcut();
+        toggleNav("shortcut");
+    });
+    randomingBtn.addEventListener("click", () => {
+        toggleRandoming();
+
+        toggleNav("randoming");
+    });
+    rockPaperScissorsBtn.addEventListener("click", () => {
+        togglerockPaperScissors();
+
+        toggleNav("rockPaperScissors");
+    });
+    showNav();
 })();

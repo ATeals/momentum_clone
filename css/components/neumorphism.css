@@ -19,5 +19,5 @@
 .neumorphism-push {
     border-radius: 21px;
     background: var(--NeumorphismBackgroundColor);
-    box-shadow: inset 8px 8px 0px var(--NeumorphismTopShadowColor), inset -20px -20px 0px var(--BackgroundColor);
+    box-shadow: inset 8px 8px 0px var(--NeumorphismTopShadowColor);
 }
