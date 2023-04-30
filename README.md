@@ -4,7 +4,7 @@
 
     이미지와 함께 보다 자세한 내용을 담고 있는 노션 링크입니다!
 
-[모맨텀 클론 설명서!](https://eastern-spike-c3b.notion.site/README-4e6a2bd3e19341a2a9bdb867edb4ce24)
+[📑 모맨텀 클론 설명서!](https://eastern-spike-c3b.notion.site/README-4e6a2bd3e19341a2a9bdb867edb4ce24)
 
 ## index.html
 
